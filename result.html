@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" href="result.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="div1">
+            <h1 id="header_name">SHAAH</h1>
+        </div>
+        <div id="div2">
+             <input id="txt" type="text" value="" name="query"/>
+             <div id='button-holder'>
+                    <a href="result.html"/><img src="images/search1.jpg" id="image123"/>
+                </div>
+        </div>
+        <div id="div3">
+        </div>
+        <div id="div4">
+        </div>
+        <script>
+  function processForm()
+  {
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    var res1=temp[1].replace("+"," ");
+    
+    while(res1.includes("+"))
+    {
+       
+        var res1=res1.replace("+"," ");
+       
+    }
+    //for(i=1;i<=temp;i++)
+    //{
+     //  res+=temp[i].replace("+"," ");
+   // }
+    //var new = temp.split("+");
+    //var new1="";
+    //for(i=0;i<temp.length; i++)
+    //{
+      //  new1+=new+ " ";
+    //}
+        // var temp2 = temp[1].split("+");
+    document.getElementById("txt").value = unescape(res1);
+    //alert(l); //Dialog with the text you put on the textbox
+  }
+  processForm();
+</script>
+    </body>
+</html>

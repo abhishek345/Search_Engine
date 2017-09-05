@@ -1,0 +1,38 @@
+<head>
+<title>Search</title>
+<style>
+    #searchcontrol
+    {
+        margin-LEFT:500PX;
+    }
+</style>
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+<script language="Javascript" type="text/javascript">
+    //<!
+    google.load("search", "1", { "nocss": true });
+
+    function DoSearch() 
+    {
+        var ss = document.getElementById("secrchBox").value;
+        // Create a search control
+        var searchControl = new google.search.SearchControl();
+
+        searchControl.addSearcher(new google.search.WebSearch());
+
+        searchControl.draw(document.getElementById("searchcontrol"));
+
+        // execute an inital search
+        searchControl.execute(ss);
+    }
+    //]]>
+</script>
+</head>
+<body>
+    <div id="searchcontrol">
+        <input type="text" id="secrchBox"/>
+        <input type="button" value="Submit" onclick=" DoSearch()"/>
+    </div>
+</body>
+</html> 

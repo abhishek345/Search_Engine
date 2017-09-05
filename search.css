@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 14, 2016, 1:04:21 AM
+    Author     : Lenovo
+*/
+#table_header
+{
+    width: 100%;
+}
+
+body
+{
+    background-image:url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1370px 670px;
+}
+
+#header_name
+{
+    color: rgb(0,0,255);
+    margin-top:200px;
+    text-align: center
+    font-family: "Times New Roman", Times, serif;
+    font-size:75px;
+    font-weight:bold;
+}
+
+#table_header
+{
+    
+    width: 505px;
+}
+
+#txt
+{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:17px;
+    margin:-40px 0 0 31.5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:465px;
+   // height: 25px;
+    //width:  500px;
+    //margin-top: 0px;
+}
+
+
+#button1{
+    width:238px;
+    font-size:20px;
+    text-align:center;
+    margin-left: -7px;
+}
+
+#b2{
+    width:238px;
+    font-size:20px;
+    text-align:center;
+    margin-left: -6px;
+}
+
+/*
+#search_symbol
+{
+  
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  position: relative;
+  left: -29px;
+  top: 10px;
+
+  //background-color: black;
+  background-image: url(images/surf.jpg);
+  //background-size: 1000px;
+  
+}
+*/
+#button-holder
+{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:-40px 0 0 53.5em;
+    text-align:center;
+    width:50px;
+}
+
+#image123
+{
+    margin:4px;
+    width:20px;
+    
+}

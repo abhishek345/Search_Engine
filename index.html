@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Engine</title>
+        <link rel="stylesheet" href="search.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <form name="myForm" action="" method="GET" >
+    <center><table id="table_header">
+           <tr>
+                <center> <h1 id="header_name">SHAAH</h1></center>
+           </tr>
+           <tr>
+                <input id="txt" type="text" placeholder="Search" name="query" />
+                <!--<input id="txt" type="text" name="query"/>
+                <span id="search_symbol"/>-->
+                <div id='button-holder'>
+                    <a href="result.html"/><img src="images/search1.jpg" id="image123"/>
+                </div>
+           </tr>
+           <tr>
+                <td><a href="result.html"/><input id="button1" type="submit"   name="action" value="Search" onclick="abc()"/> </td>
+                <td><a href="compare.html"/><input id="b2" type="submit"  name="action" value="Compare"  onclick="def()"/></td>    
+           </tr>
+    </table>
+    </center>
+    <script>
+      
+       function abc()
+        {
+             document.myForm.action ="result.html";
+       }
+        
+       function def()
+        {
+            document.myForm.action ="compare.html";
+        }
+ 
+      // Trigger the validations
+       //return document.myForm.runvalidation();
+   
+</script>
+        </form>
+    </body>
+</html>

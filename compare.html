@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" href="compare.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="function()">
+        <div id="div1">
+            <h1 id="header_name">SHAAH</h1>
+        </div>
+        <div id="div2">
+             <input id="txt" type="text" value="" name="query"/>
+          <!--   <div id="button-holder">
+                    <a href="result.html"/><img src="images/search1.jpg" id="image123"/>
+             </div>-->
+        </div>
+        <div id="div3">
+        </div>
+        <div id="div4">
+        </div>
+        <div id="div5">
+            <!--<object type="text/html" data="http://validator.w3.org/" width="678px" height="325px" ></object> -->
+            <iframe src="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=concat%20javascript" width="675px" height="300px" id="iframe_id">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+        </div>
+        <div id="div6">
+            <script>
+  (function() {
+    var cx = '004763968576963952908:agoe_vyidys';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx ;
+   // gcse.iHeight=300px;
+    //gcse.iWidth=625px;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+        </div>
+       <script>
+  function processForm()
+  {
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    var res1=temp[1].replace("+"," ");
+ 
+    
+    while(res1.includes("+"))
+    {
+       
+        res1=res1.replace("+"," ");
+       
+    }
+    
+    document.getElementById("txt").value = unescape(res1);
+    var str="https://www.bing.com/search?q="
+    var str1="&qs=n&form=QBRE&pq=";
+    var str2=str.concat(temp[1]);
+    var str3=str2.concat(str1);
+    var str4=str3.concat(temp[1]);
+    //document.getElementById('iframe_id').src=str4;
+    //alert(l); //Dialog with the text you put on the textbox
+  }
+  processForm();
+ 
+  
+
+
+  //https://www.bing.com/search?q=hi%20njdc%20kvkv&qs=n&form=QBRE&pq=hi%20njdc%20kvkv
+ // document.getElementById("div5").load("https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=hithub");
+</script>
+    </body>
+</html>
